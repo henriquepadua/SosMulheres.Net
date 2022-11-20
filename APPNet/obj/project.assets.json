@@ -3796,11 +3796,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\Dotnet\\AppNet\\AppNet.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Dotnet\\AppNet\\APPNet\\AppNet.csproj",
       "projectName": "AppNet",
-      "projectPath": "C:\\Users\\User\\Documents\\Dotnet\\AppNet\\AppNet.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Dotnet\\AppNet\\APPNet\\AppNet.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\Dotnet\\AppNet\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Dotnet\\AppNet\\APPNet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

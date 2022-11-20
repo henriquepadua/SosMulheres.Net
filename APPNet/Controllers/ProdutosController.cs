@@ -12,23 +12,17 @@ namespace APPNet.Controllers
         }
 
         [HttpGet]
-        [Route("Criar")]
+        [Route("login")]
         public ActionResult Criar()
         {
-            return View("Views/Start/Criar.cshtml");
+            return View("Views/Start/Login.cshtml");
         }
 
         [HttpGet]
-        [Route("Atualizar")]
+        [Route("Relatos")]
         public ActionResult Atualizar()
         {
-            return View("Views/Start/Atualizar.cshtml");
+            return View("Views/Start/Relatos.cshtml");
         }
-
-        [HttpGet]
-        [Route("ListarProdutos")]
-        public ActionResult ListarProdutos(){
-            return View("Views/Start/Listar.cshtml");
-        }
-    }
+   }
 }
