@@ -1,9 +1,11 @@
-using APPNet.Interface;
+using APPNet.Models;
 
 namespace APPNet.Interface
 {   
     public interface IProdutoService {
-        int Create(int Id);
+        void Read(Produto produto);
+
+        void Delete(int ID);
     }
 
 }
