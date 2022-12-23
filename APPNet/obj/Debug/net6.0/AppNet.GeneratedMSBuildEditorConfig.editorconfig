@@ -9,21 +9,21 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppNet
 build_property.RootNamespace = AppNet
-build_property.ProjectDir = C:\Users\nayna\OneDrive\Documentos\APPNet\APPNET\APPNet\
+build_property.ProjectDir = C:\Users\henri\Documents\APPNet\APPNET\APPNet\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nayna\OneDrive\Documentos\APPNet\APPNET\APPNet
+build_property.MSBuildProjectDirectory = C:\Users\henri\Documents\APPNet\APPNET\APPNet
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nayna/OneDrive/Documentos/APPNet/APPNET/APPNet/Views/Start/Index.cshtml]
+[C:/Users/henri/Documents/APPNet/APPNET/APPNet/Views/Start/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nayna/OneDrive/Documentos/APPNet/APPNET/APPNet/Views/Start/Login.cshtml]
+[C:/Users/henri/Documents/APPNet/APPNET/APPNet/Views/Start/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nayna/OneDrive/Documentos/APPNet/APPNET/APPNet/Views/Start/Relatos.cshtml]
+[C:/Users/henri/Documents/APPNet/APPNET/APPNet/Views/Start/Relatos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRcUmVsYXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nayna\\OneDrive\\Documentos\\APPNet\\APPNET\\APPNet\\AppNet.csproj": {}
+    "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\AppNet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nayna\\OneDrive\\Documentos\\APPNet\\APPNET\\APPNet\\AppNet.csproj": {
+    "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\AppNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nayna\\OneDrive\\Documentos\\APPNet\\APPNET\\APPNet\\AppNet.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\AppNet.csproj",
         "projectName": "AppNet",
-        "projectPath": "C:\\Users\\nayna\\OneDrive\\Documentos\\APPNet\\APPNET\\APPNet\\AppNet.csproj",
-        "packagesPath": "C:\\Users\\nayna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nayna\\OneDrive\\Documentos\\APPNet\\APPNET\\APPNet\\obj\\",
+        "projectPath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\AppNet.csproj",
+        "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nayna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

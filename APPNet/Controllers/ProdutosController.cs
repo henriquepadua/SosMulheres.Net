@@ -1,50 +1,59 @@
 using Microsoft.AspNetCore.Mvc;
 using APPNet.Models;
 using APPNet.Interface;
-using APPNet.Service;
-using APPNet.DAO;
 
 namespace APPNET.Controllers
 {
-    public class ProdutoController : Controller{
+    public class UserController : Controller{
+        public readonly IUserService _userService;
+
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
+        }
         [HttpGet]
-        [Route("Cadastrar")]
+        [Route("Index.html")]
         public ActionResult Index()
         {
-            return View("Views/Start/Index.cshtml");
-        }
-
-        [HttpPost]
-        [Route("localhost:5500/relato")]
-        public ActionResult CriarRelatos()
-        {
-            return View("Views/Start/Index.cshtml");
+            return View();
         }
 
         [HttpGet]
-        [Route("login")]
-        public ActionResult Criar()
+        [Route("login.html")]
+        public ActionResult Login()
         {
-            return View("Views/Start/Login.cshtml");
+            return View();
         }
 
         [HttpGet]
-        [Route("Relatos")]
-        public ActionResult Atualizar()
+        [Route("Relatos.html")]
+        public ActionResult Relatos()
         {
-            return View("Views/Start/Relatos.cshtml");
+            return View();
         }
 
         [HttpGet]
-        [Route("Conexao")]
-        public ActionResult Conectar(Produto produto)
+        [Route("User/Create")]
+        public ActionResult Create(Usuarios user)
         {
-            Conectar c = new Conectar();
-            ProdutoService service = new ProdutoService(c);
-            service.Read(produto);                
+            _userService.Create(user);
             return Ok(StatusCode(200));
-            //return BadRequest(StatusCode(404));
-            
         }
-   }
+
+        [HttpGet]
+        [Route("User/Read")]
+        public ActionResult Read(Usuarios user)
+        {
+            _userService.Read(user);
+            return Ok(StatusCode(200));
+        }
+
+        [HttpGet]
+        [Route("User/Delete")]
+        public ActionResult Delete(Usuarios user)
+        {
+            _userService.Delete(user);
+            return Ok(StatusCode(200));
+        }
+    }
 }

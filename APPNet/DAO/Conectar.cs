@@ -1,3 +1,4 @@
+using APPNet.Models;
 using Npgsql;
 
 
@@ -6,13 +7,13 @@ namespace APPNet.DAO{
         public NpgsqlConnection pgsqlConnection;
         public bool ConectarBanco()
         {
-                string serverName = "127.0.0.1";                                          //localhost
+                string serverName = "localhost";                                          //localhost
 
                 string port = "5432";                                                            //porta default
 
                 string userName = "ti2cc";                                               //nome do administrador
 
-                string password = "ti@cc";                                             //senha do administrador
+                string password = "ti2cc";                                             //senha do administrador
 
                 string databaseName = "sosmulheres";                                       //nome do banco de dados
 
@@ -28,7 +29,7 @@ namespace APPNet.DAO{
                 return false;
         }
 
-        public NpgsqlDataReader ExecuteDataReader(string sql)
+        public Usuarios ExecuteDataReader(string sql,Usuarios user)
         {
             NpgsqlDataReader dr = null;
             try
@@ -39,6 +40,7 @@ namespace APPNet.DAO{
                 }
                 NpgsqlCommand cmd = new NpgsqlCommand(sql,this.pgsqlConnection);
                 dr = cmd.ExecuteReader();
+                Console.WriteLine(dr.ToString());
                 return dr;
             }
             catch (Exception ex)
