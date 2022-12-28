@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oLORLEDodHKmRNg/CCqys1Cz+idcYjdWKU7Q51jpwI1odyo1Ba40FUei6PbiNr35fiSetkrQuW7DUasK9rROYQ==",
+  "dgSpecHash": "7jhl34wQhNofgvsMBzMW7WSSDjIKzuaQvqxzAV7s/39qD8OiX7BC+UUZIK5jTLbH0lTaWISUCqq6IMJw8TsTFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj",
+  "projectFilePath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\SosMulheres\\SosMulheres.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\henri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\henri\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

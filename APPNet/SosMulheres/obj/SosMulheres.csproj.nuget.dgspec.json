@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj": {}
+    "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\SosMulheres\\SosMulheres.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj": {
+    "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\SosMulheres\\SosMulheres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\SosMulheres\\SosMulheres.csproj",
         "projectName": "SosMulheres",
-        "projectPath": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj",
+        "projectPath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\SosMulheres\\SosMulheres.csproj",
         "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\obj\\",
+        "outputPath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\APPNet\\SosMulheres\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
