@@ -160,7 +160,7 @@ namespace SosMulheres.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        [HttpGet]
+        /*[HttpGet]
         [Route("Login")]
         public IActionResult Login()
         {
@@ -170,12 +170,16 @@ namespace SosMulheres.Controllers
         [HttpPost]
         [Route("Login")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(User user)
+        public async Task<IActionResult> Login([Bind("Id","Usuario","Senha")] User user)
         {
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-        }
+            if (ModelState.IsValid)
+            {
+                var UsuarioReturn = _context.User.Any(e => e.Usuario == user.Usuario && e.Senha == user.Senha);
+                if(!UsuarioReturn) return RedirectToAction(nameof(Index));
+                return View();
+            }
+            return View();
+        }*/
 
         private bool UserExists(int id)
         {
