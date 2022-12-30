@@ -32,15 +32,15 @@ namespace SosMulheres.Controllers
         [HttpPost]
         [Route("Login")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Index([Bind("Id", "Usuario", "Senha")] User user)
+        public async Task<IActionResult> Index([Bind("Id","Senha", "Email")] User user)
         {
             if (ModelState.IsValid)
             {
-                var UsuarioReturn = _context.User.Any(e => e.Usuario == user.Usuario && e.Senha == user.Senha);
+                var UsuarioReturn = _context.User.Any(e => e.Senha == user.Senha &&  e.Email == user.Email);
                 if (UsuarioReturn) return View("Index");
-                return View();
+                return View("Login");
             }
-            return View();
+            return View("Login");
         }
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

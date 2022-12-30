@@ -6,8 +6,13 @@ namespace SosMulheres.Models
     {
         public int Id { get; set; }
         [Required]
-        public string Usuario { get; set; }
+        public string? Usuario { get; set; }
         [Required]
-        public string Senha { get; set; }
+        public string? Senha { get; set; }
+        [Required]
+        public string? NomeCompleto { get; set; }
+        [Required]
+        public string? Email { get; set; }
+
     }
 }
