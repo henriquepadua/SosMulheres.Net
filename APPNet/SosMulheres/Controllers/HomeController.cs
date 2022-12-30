@@ -29,10 +29,11 @@ namespace SosMulheres.Controllers
         {
             return View();
         }
+
         [HttpPost]
         [Route("Login")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Index([Bind("Id","Senha", "Email")] User user)
+        public async Task<IActionResult> Login([Bind("Id","Senha", "Email")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -42,7 +43,21 @@ namespace SosMulheres.Controllers
             }
             return View("Login");
         }
-        
+
+        [HttpPost]
+        [Route("Cadastro")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Cadastro(User user)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.User.Add(user);
+                _context.SaveChanges();
+                return View("Login");
+            }
+            return BadRequest();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
