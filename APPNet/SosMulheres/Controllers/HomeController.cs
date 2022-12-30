@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using SosMulheres.Config;
 using SosMulheres.Models;
 using System.Diagnostics;
@@ -17,10 +16,12 @@ namespace SosMulheres.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View("Login");
         }
+
 
         [HttpGet]
         [Route("Login")]
@@ -28,16 +29,15 @@ namespace SosMulheres.Controllers
         {
             return View();
         }
-
         [HttpPost]
         [Route("Login")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login([Bind("Id", "Usuario", "Senha")] User user)
+        public async Task<IActionResult> Index([Bind("Id", "Usuario", "Senha")] User user)
         {
             if (ModelState.IsValid)
             {
                 var UsuarioReturn = _context.User.Any(e => e.Usuario == user.Usuario && e.Senha == user.Senha);
-                if (UsuarioReturn) return RedirectToAction(nameof(Index));
+                if (UsuarioReturn) return View("Index");
                 return View();
             }
             return View();
