@@ -42,6 +42,7 @@ namespace SosMulheres.Controllers
                 return View("Login");
             }
             return View("Login");
+        
         }
 
         [HttpPost]
@@ -51,11 +52,25 @@ namespace SosMulheres.Controllers
         {
             if (ModelState.IsValid)
             {
+                var UsuarioReturn = _context.User.Any(e => e.Email == user.Email || e.Senha == user.Senha);
+                
+                if (UsuarioReturn) return BadRequest();
+                
                 _context.User.Add(user);
                 _context.SaveChanges();
+                
                 return View("Login");
             }
+
             return BadRequest();
+        }
+
+        [HttpGet]
+        [Route("Relatos")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Relatos(Relatos relatos)
+        {
+            return Ok();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

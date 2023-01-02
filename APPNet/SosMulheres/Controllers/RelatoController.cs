@@ -10,17 +10,17 @@ using SosMulheres.Models;
 
 namespace SosMulheres.Controllers
 {
-    public class RelatosController : Controller
+    public class RelatoController : Controller
     {
         private readonly SosMulheresContext _context;
 
-        public RelatosController(SosMulheresContext context)
+        public RelatoController(SosMulheresContext context)
         {
             _context = context;
         }
 
         // GET: Relatos
-        public async Task<IActionResult> Index()
+        /*public async Task<IActionResult> Index()
         {
               return View(await _context.Relatos.ToListAsync());
         }
@@ -157,5 +157,6 @@ namespace SosMulheres.Controllers
         {
           return _context.Relatos.Any(e => e.Id == id);
         }
+        */
     }
 }
