@@ -28,28 +28,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Home/Relatos.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWxhdG9zLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Relatos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Relatos/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Relatos/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Relatos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Relatos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xJbmRleC5jc2h0bWw=
+[C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Home/Relato.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWxhdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/henri/Documents/APPNet/APPNET/APPNet/SosMulheres/Views/Shared/Error.cshtml]

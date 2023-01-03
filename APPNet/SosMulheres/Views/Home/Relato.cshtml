@@ -1,10 +1,8 @@
-﻿@model SosMulheres.Models.Relatos
+﻿model SosMulheres.Models.User
 
 @{
     ViewData["Title"] = "Relatos";
 }
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -24,7 +22,7 @@
 
         <header>
             <div class="row">
-                <a href="index"><i class="fas fa-arrow-circle-left" id="font"><p id="volt">voltar à página inicial</p></i></a>
+                <a href="index.html"><i class="fas fa-arrow-circle-left" id="font"><p id="volt">voltar à página inicial</p></i></a>
             </div>
         </header>
 
@@ -48,7 +46,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form asp-action="Relatos">
+                            <form class="form--register" action="http://localhost:5500/relato" method="post" id="form-add">
                                 <div id="comp">
                                     <div>
                                         <label for="nomeRel">Nome:</label>

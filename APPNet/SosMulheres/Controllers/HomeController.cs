@@ -42,7 +42,6 @@ namespace SosMulheres.Controllers
                 return View("Login");
             }
             return View("Login");
-        
         }
 
         [HttpPost]
@@ -66,11 +65,19 @@ namespace SosMulheres.Controllers
         }
 
         [HttpGet]
-        [Route("Relatos")]
+        [Route("Relato")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Relatos(Relatos relatos)
+        public ActionResult Relatos(Relatos relatos)
         {
-            return Ok();
+            return View("Relato");
+        }
+
+        [HttpPost]
+        [Route("Relato")]
+        [ValidateAntiForgeryToken]
+        public ActionResult Relato(Relatos relatos)
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

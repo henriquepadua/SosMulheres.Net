@@ -194,31 +194,31 @@
                         <h1 class="text-center titulo-secao mt-4">COMPARTILHE SUA HISTÓRIA</h1>
                         <p><br></p>
 
-                        <form class="col-xl-8" action="http://localhost:5500/relato" method="post">
+                        <form asp-action="Relato">
                             <div id="comp">
                                 <div>
-                                    <label for="nomeRel">Nome:</label>
-                                    <input name="nome" type="text" id="nomeRel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                                    <label for="Nome">Nome:</label>
+                                    <input name="Nome" type="text" id="Nome" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
                                     <br>
                                 </div>
                                 <div>
-                                    <label for="dataRel">Data do ocorrido: </label>
-                                    <input name="data" type="date" id="dataRel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                                    <label for="DataOcorrido">Data do ocorrido: </label>
+                                    <input name="DataOcorrido" type="date" id="DataOcorrido" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
                                     <br>
                                 </div>
                                 <div>
-                                    <label for="idadeRel">Idade na época: </label>
-                                    <input name="idade" type="text" id="idadeRel" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
+                                    <label for="Idade">Idade na época: </label>
+                                    <input name="Idade" type="text" id="Idade" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
                                     <br>
                                 </div>
                                 <div>
-                                    <label for="testemunhoRel">Relato: </label>
-                                    <textarea name="testemunho" class="form-control" id="testemunhoRel" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                    <label for="Relato">Relato: </label>
+                                    <textarea name="Relato" class="form-control" id="Relato"  rows="3" required></textarea>
                                     <br>
                                 </div>
                                 <div>
-                                    <label for="categoria">Categoria: </label>
-                                    <textarea name="categoria" class="form-control" id="categoriaRel" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                                    <label for="Categoria">Categoria: </label>
+                                    <textarea name="Categoria" class="form-control" id="Categoria"  rows="3" required></textarea>
                                     <br>
                                 </div>
                                 <input type="submit" value="cadastrar" class="input--main__style input--button">
@@ -379,6 +379,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script src="relatos.js"></script>
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
 </body>
 
 </html>
