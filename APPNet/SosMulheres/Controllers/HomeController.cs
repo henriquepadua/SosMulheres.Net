@@ -22,13 +22,13 @@ namespace SosMulheres.Controllers
             return View("Login");
         }
 
-
         [HttpGet]
         [Route("Login")]
         public IActionResult Login()
         {
-            return View();
+            return View("Index");
         }
+
 
         [HttpPost]
         [Route("Login")]
@@ -62,14 +62,6 @@ namespace SosMulheres.Controllers
             }
 
             return BadRequest();
-        }
-
-        [HttpGet]
-        [Route("Relato")]
-        [ValidateAntiForgeryToken]
-        public ActionResult Relatos(Relatos relatos)
-        {
-            return View("Relato");
         }
 
         [HttpPost]
