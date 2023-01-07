@@ -64,12 +64,26 @@ namespace SosMulheres.Controllers
             return BadRequest();
         }
 
+        [HttpGet]
+        [Route("Relato")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Relatos(Relatos relatos)
+        {
+            return View("Relato");
+        }
+
         [HttpPost]
         [Route("Relato")]
         [ValidateAntiForgeryToken]
-        public ActionResult Relato(Relatos relatos)
+        public async Task<IActionResult> Relato(Relatos relatos)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                _context.Relatos.Add(relatos);
+                _context.SaveChanges();
+                return View();
+            }
+            return BadRequest();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
