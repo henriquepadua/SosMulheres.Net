@@ -2,6 +2,7 @@
 using SosMulheres.Config;
 using SosMulheres.Models;
 using System.Diagnostics;
+using Microsoft.JSInterop;
 
 namespace SosMulheres.Controllers
 {
@@ -33,11 +34,11 @@ namespace SosMulheres.Controllers
         [HttpPost]
         [Route("Login")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login([Bind("Id","Senha", "Email")] User user)
+        public async Task<IActionResult> Login([Bind("Id", "Senha", "Email")] User user)
         {
             if (ModelState.IsValid)
             {
-                var UsuarioReturn = _context.User.Any(e => e.Senha == user.Senha &&  e.Email == user.Email);
+                var UsuarioReturn = _context.User.Any(e => e.Senha == user.Senha && e.Email == user.Email);
                 if (UsuarioReturn) return View("Index");
                 return View("Login");
             }
@@ -52,12 +53,12 @@ namespace SosMulheres.Controllers
             if (ModelState.IsValid)
             {
                 var UsuarioReturn = _context.User.Any(e => e.Email == user.Email || e.Senha == user.Senha);
-                
+
                 if (UsuarioReturn) return BadRequest();
-                
+
                 _context.User.Add(user);
                 _context.SaveChanges();
-                
+
                 return View("Login");
             }
 
