@@ -24,7 +24,6 @@
             <div class="row">
                 <a href="Login"><i class="fas fa-arrow-circle-left" id="font"><p id="volt">voltar à página inicial</p></i></a>
             </div>
-
         </header>
 
 
@@ -47,7 +46,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form asp-action="Relato">
+                            <form class="form--register" action="http://localhost:5500/relato" method="post" id="form-add">
                                 <div id="comp">
                                     <div>
                                         <label for="Nome">Nome:</label>
@@ -197,12 +196,12 @@
                                     </div>
                                 </div>
                                 <span class="badge bg-dark icone"><i class="fas fa-user"></i></span>
-                                <h5 style="color: black;" class="mt-4 tit-papa"><strong>${relatos.nome}</strong></h5>
-                                <p>Idade na época: ${relatos.idade}<br>Data do ocorrido: ${relatos.data}</p>
+                                <h5 style="color: black;" class="mt-4 tit-papa"><strong>${relatos.Nome}</strong></h5>
+                                    <p>Idade na época: ${relatos.Idade}<br>Data do ocorrido: ${relatos.DataOcorrido}</p>
                             </center>
                             </div>
                             <div class = "col-9 col-sm-12 col-md-6 col-lg-8 col-xl-9"><br>
-                                <p>${relatos.testemunho}</p>
+                                <p>${relatos.Relato}</p>
                             </div>
                         </div>
                         <br>`;
@@ -212,12 +211,12 @@
                             <div class = "col-3 col-sm-12 col-md-6 col-lg-4 col-xl-3">
                             <center>
                                 <span class="badge bg-dark icone"><i class="fas fa-user"></i></span>
-                                <h5 style="color: black;" class="mt-4 tit-papa"><strong>${relatos.nome}</strong></h5>
-                                <p>Idade na época: ${relatos.idade}<br>Data do ocorrido: ${relatos.data}</p>
+                                <h5 style="color: black;" class="mt-4 tit-papa"><strong>${relatos.Nome}</strong></h5>
+                                <p>Idade na época: ${relatos.Idade}<br>Data do ocorrido: ${relatos.DataOcorrido}</p>
                             </center>
                             </div>
                             <div class = "col-9 col-sm-12 col-md-6 col-lg-8 col-xl-9"><br>
-                                <p>${relatos.testemunho}</p>
+                                <p>${relatos.Relato}</p>
                             </div>
                         </div>
                         <br>`;
