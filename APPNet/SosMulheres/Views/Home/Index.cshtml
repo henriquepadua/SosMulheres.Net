@@ -22,7 +22,7 @@
     <script src="index.js"></script>
     <script>
         if (!usuarioCorrente.login) {
-            window.location.href = LOGIN_URL;
+            window.location.href = Login;
         }
 
         function initPage() {
@@ -76,7 +76,7 @@
                     </div>
                     <div class="col-2">
                         <div id="div1">
-                            <p><strong><span id="nomeUsuario"></span> </strong><button id="btn_logout" class="botao1">Logout</button></p>
+                            <p><strong><span id="nomeUsuario"></span> </strong><button id="btn_logout" class="botao1"> <a asp-action="Index" asp-controller="Home"> Logout</a></button></p>
                         </div>
                     </div>
                 </div>
