@@ -1,14 +1,21 @@
 using Microsoft.EntityFrameworkCore;
 using SosMulheres.Config;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddEntityFrameworkNpgsql()
-    .AddDbContext<SosMulheresContext>(options =>
-    options.UseNpgsql("Host=localhost;Port=5432;Pooling=true;Database=sosmulheres;User Id=ti2cc;Password=ti2cc;"));
+//builder.Services.AddEntityFrameworkNpgsql()
+//    .AddDbContext<SosMulheresContext>(options =>
+//    options.UseNpgsql("Host=localhost;Port=5432;Pooling=true;Database=sosmulheres;User Id=ti2cc;Password=ti2cc;"));
+
+builder.Services.AddDbContext<SosMulheresContext>(options =>
+options.UseNpgsql(
+builder.Configuration.GetConnectionString("DefaultConnection")
+));
+
 
 var app = builder.Build();
 
