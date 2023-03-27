@@ -1,17 +1,17 @@
-﻿using Microsoft.Build.Framework;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Globalization;
+
 
 namespace SosMulheres.Models
 {
+    [MetadataType(typeof(User))]
     public class User
     {
         public int Id { get; set; }
-        [Required]
-        public string? Usuario { get; set; }
-        [Required]
         public string? Senha { get; set; }
-        [Required]
+       // [Required]
         public string? NomeCompleto { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Email is required.")]
         public string? Email { get; set; }
 
     }

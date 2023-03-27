@@ -2,7 +2,6 @@
 using SosMulheres.Config;
 using SosMulheres.Models;
 using System.Diagnostics;
-using Microsoft.JSInterop;
 
 namespace SosMulheres.Controllers
 {
@@ -48,7 +47,7 @@ namespace SosMulheres.Controllers
         [HttpPost]
         [Route("Cadastro")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Cadastro(User user)
+        public async Task<IActionResult> Cadastro( User user)
         {
             if (ModelState.IsValid)
             {
