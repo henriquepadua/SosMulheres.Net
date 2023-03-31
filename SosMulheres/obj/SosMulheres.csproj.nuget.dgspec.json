@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj": {}
+    "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\SOSMulheres.csproj": {}
   },
   "projects": {
-    "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj": {
+    "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\SOSMulheres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj",
-        "projectName": "SosMulheres",
-        "projectPath": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\SosMulheres.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\SOSMulheres.csproj",
+        "projectName": "SOSMulheres",
+        "projectPath": "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\SOSMulheres.csproj",
         "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\henri\\source\\repos\\SosMulheres\\SosMulheres\\obj\\",
+        "outputPath": "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,19 +40,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Relational": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.12, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.12, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.12, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

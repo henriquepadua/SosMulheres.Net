@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SosMulheres.Models;
+using SOSMulheres.Models;
 
-namespace SosMulheres.Config
+namespace SosMulheres.Context
 {
     public class SosMulheresContext : DbContext
     {
@@ -11,6 +11,6 @@ namespace SosMulheres.Config
 
         public DbSet<Relatos> Relatos { get; set; }
 
-        public DbSet<User> User { get; set; }
+        //public DbSet<User> User { get; set; }
     }
 }

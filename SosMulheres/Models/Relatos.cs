@@ -1,4 +1,4 @@
-﻿namespace SosMulheres.Models
+﻿namespace SOSMulheres.Models
 {
     public class Relatos
     {

@@ -1,9 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SosMulheres.Config;
-using SosMulheres.Models;
-using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using SOSMulheres.Models;
+using SosMulheres.Context;
 
-namespace SosMulheres.Controllers
+namespace SOSMulheres.Controllers
 {
     public class RelatosController : Controller
     {
@@ -14,19 +19,145 @@ namespace SosMulheres.Controllers
             _context = context;
         }
 
+        // GET: Relatos
+        public async Task<IActionResult> Index()
+        {
+              return _context.Relatos != null ? 
+                          View(await _context.Relatos.ToListAsync()) :
+                          Problem("Entity set 'SosMulheresContext.Relatos'  is null.");
+        }
 
+        // GET: Relatos/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || _context.Relatos == null)
+            {
+                return NotFound();
+            }
+
+            var relatos = await _context.Relatos
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (relatos == null)
+            {
+                return NotFound();
+            }
+
+            return View(relatos);
+        }
+
+        // GET: Relatos/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Relatos/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [Route("Relato")]
-        //[ValidateAntiForgeryToken]
-        public async Task<IActionResult> Relato(Relatos relatos)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,Nome,DataOcorrido,Relato,Idade,Categoria")] Relatos relatos)
         {
             if (ModelState.IsValid)
             {
-                _context.Relatos.Add(relatos);
-                _context.SaveChanges();
-                return View();
+                _context.Add(relatos);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
-            return BadRequest();
+            return View(relatos);
+        }
+
+        // GET: Relatos/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null || _context.Relatos == null)
+            {
+                return NotFound();
+            }
+
+            var relatos = await _context.Relatos.FindAsync(id);
+            if (relatos == null)
+            {
+                return NotFound();
+            }
+            return View(relatos);
+        }
+
+        // POST: Relatos/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DataOcorrido,Relato,Idade,Categoria")] Relatos relatos)
+        {
+            if (id != relatos.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(relatos);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!RelatosExists(relatos.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(relatos);
+        }
+
+        // GET: Relatos/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.Relatos == null)
+            {
+                return NotFound();
+            }
+
+            var relatos = await _context.Relatos
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (relatos == null)
+            {
+                return NotFound();
+            }
+
+            return View(relatos);
+        }
+
+        // POST: Relatos/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.Relatos == null)
+            {
+                return Problem("Entity set 'SosMulheresContext.Relatos'  is null.");
+            }
+            var relatos = await _context.Relatos.FindAsync(id);
+            if (relatos != null)
+            {
+                _context.Relatos.Remove(relatos);
+            }
+            
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool RelatosExists(int id)
+        {
+          return (_context.Relatos?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }

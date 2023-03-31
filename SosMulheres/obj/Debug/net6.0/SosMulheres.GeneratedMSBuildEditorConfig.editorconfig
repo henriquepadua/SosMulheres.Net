@@ -7,47 +7,59 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = SosMulheres
-build_property.RootNamespace = SosMulheres
-build_property.ProjectDir = C:\Projeto\SosMulheres\SosMulheres\
+build_property.RootNamespace = SOSMulheres
+build_property.RootNamespace = SOSMulheres
+build_property.ProjectDir = C:\Users\henri\Documents\APPNet\SOSMulheres\SOSMulheres\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projeto\SosMulheres\SosMulheres
+build_property.MSBuildProjectDirectory = C:\Users\henri\Documents\APPNet\SOSMulheres\SOSMulheres
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/Home/Index.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/Home/Privacy.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/Relatos/Relato.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xSZWxhdG8uY3NodG1s
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Relatos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/Shared/Error.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Relatos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Relatos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Relatos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Relatos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/User/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Projeto/SosMulheres/SosMulheres/Views/_ViewImports.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/_ViewStart.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projeto/SosMulheres/SosMulheres/Views/Shared/_Layout.cshtml]
+[C:/Users/henri/Documents/APPNet/SOSMulheres/SOSMulheres/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-8ae5c7rmjc
+build_metadata.AdditionalFiles.CssScope = b-ob0y0rkrhh

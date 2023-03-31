@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SosMulheres.Models;
+using SOSMulheres.Models;
 using System.Diagnostics;
 
-namespace SosMulheres.Controllers
+namespace SOSMulheres.Controllers
 {
-    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -14,9 +13,12 @@ namespace SosMulheres.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        [Route("Index.html")]
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
         {
             return View();
         }

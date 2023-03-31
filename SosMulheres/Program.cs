@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SosMulheres.Config;
+using SosMulheres.Context;
 using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);

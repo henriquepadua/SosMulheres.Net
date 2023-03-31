@@ -1,6 +1,9 @@
-﻿@{
-    ViewData["Title"] = "SOS MULHERES";
+﻿@model SOSMulheres.Models.Relatos
+
+@{
+    ViewData["Title"] = "Home Page";
 }
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -179,7 +182,7 @@
                         </p>
                     </div>
                 </div>
-                <a href="Relato"> <button type="button" class="botao2">+ relatos</button></a>
+                <a href="Relatos"> <button type="button" class="botao2">+ relatos</button></a>
 
             </section>
 
@@ -190,7 +193,7 @@
                         <h1 class="text-center titulo-secao mt-4">COMPARTILHE SUA HISTÓRIA</h1>
                         <p><br></p>
 
-                        <form asp-action="Relato" asp-controller="Relatos" method="post">
+                        <form asp-action="Create" asp-controller="Relatos" method="post">
                             <div id="comp">
                                 <div>
                                     <label for="Nome">Nome:</label>
