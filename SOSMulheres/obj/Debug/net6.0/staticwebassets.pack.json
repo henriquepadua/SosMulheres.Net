@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\wwwroot\\css\\styleRelatos.css",
+      "PackagePath": "staticwebassets\\css\\styleRelatos.css"
+    },
+    {
       "Id": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

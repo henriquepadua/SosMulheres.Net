@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rNx/UZIJFBpaP/avfkl3AzbkFAxCzcgYaDtSrpeePog=",
+  "Hash": "rAKX5z36XDhGFOe7YRRRrnlSdNlqB4xKNFPQ82t8qp0=",
   "Source": "SOSMulheres",
   "BasePath": "_content/SOSMulheres",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\wwwroot\\css\\styleRelatos.css",
+      "SourceId": "SOSMulheres",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\wwwroot\\",
+      "BasePath": "_content/SOSMulheres",
+      "RelativePath": "css/styleRelatos.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styleRelatos.css"
     },
     {
       "Identity": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\wwwroot\\favicon.ico",
