@@ -10097,11 +10097,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\SOSMulheres.csproj",
+      "projectUniqueName": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\SOSMulheres.csproj",
       "projectName": "SOSMulheres",
-      "projectPath": "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\SOSMulheres.csproj",
+      "projectPath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\SOSMulheres.csproj",
       "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\henri\\Documents\\APPNet\\SOSMulheres\\SOSMulheres\\obj\\",
+      "outputPath": "C:\\Users\\henri\\Documents\\APPNet\\APPNET\\SOSMulheres\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
